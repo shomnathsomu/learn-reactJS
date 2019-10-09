@@ -8,13 +8,25 @@ import ReactDOM from 'react-dom';
 
 // ReactDOM.render(<h1>Hello World, Man!! </h1>, document.getElementById('root'));
 
+function MyApp() {
+    return (
+        <div>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+            <ol>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ol>
+        </div>
+    )
+}
 
 ReactDOM.render(
-    <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-    </ul>
+    <MyApp />
     , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
