@@ -4,9 +4,18 @@ import ReactDOM from 'react-dom';
 // import App from './App';
 // import * as serviceWorker from './serviceWorker';
 
-//ReactDOM.render(<App />, document.getElementById('root'));
+// ReactDOM.render(<App />, document.getElementById('root'));
 
-ReactDOM.render(<h1>Hello World!! </h1>, document.getElementById('root'));
+// ReactDOM.render(<h1>Hello World, Man!! </h1>, document.getElementById('root'));
+
+
+ReactDOM.render(
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
