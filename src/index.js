@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import MyApp from './MyApp';
+
 // import './index.css';
 // import App from './App';
 // import * as serviceWorker from './serviceWorker';
@@ -7,29 +9,6 @@ import ReactDOM from 'react-dom';
 // ReactDOM.render(<App />, document.getElementById('root'));
 
 // ReactDOM.render(<h1>Hello World, Man!! </h1>, document.getElementById('root'));
-
-function MyApp() {
-    return (
-        <div>
-            <h1>Country List</h1>
-            <p>Some country names are following below:</p>
-            <ul>
-                <li>Bangladesh</li>
-                <li>Thailand</li>
-                <li>Japan</li>
-            </ul>
-            <p>There are some fruits list: </p>
-            <ol>
-                <li>Banana</li>
-                <li>Orange</li>
-                <li>Papaya</li>
-            </ol>
-        </div>
-    )
-}
-
-// 
-
 
 ReactDOM.render(
     <MyApp />
