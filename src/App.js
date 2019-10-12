@@ -4,6 +4,7 @@ import './App.css';
 
 function App() {
   return (
+    // parent/ child components
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
