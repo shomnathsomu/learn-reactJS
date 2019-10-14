@@ -2,14 +2,8 @@ import React from 'react';
 
 function Header() {
     return(
-      <nav>
-        <h1>Learn ReactJS</h1>
-        <ul>
-          <li>object 1</li>
-          <li>object 2</li>
-          <li>object 3</li>
-        </ul>
-      </nav>
+      //Styling React with css classes
+      <header className="navbar">Header goes here..</header>
     )
 }
 
