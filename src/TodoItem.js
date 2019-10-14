@@ -1,15 +1,12 @@
 import React from 'react';
-import TodoItem from './TodoItem';
 
-function Todo() {
+function TodoItem() {
     return(
-        <div className="todo-list">
-            <TodoItem />
-            <TodoItem />
-            <TodoItem />
-            <TodoItem />
+        <div className="todo-item">
+            <input type="checkbox"/>
+            <p>Text goes here..</p>
         </div>
     )
 }
 
-export default Todo;
+export default TodoItem;
