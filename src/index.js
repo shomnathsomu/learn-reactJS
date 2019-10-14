@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // import MyApp from './components/MyApp';
 
-// import './index.css';
-import App from './App';
+ import './index.css';
+ import Todo from './Todo';
+// import App from './App';
 // import * as serviceWorker from './serviceWorker';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
@@ -11,7 +12,7 @@ import App from './App';
 // ReactDOM.render(<h1>Hello World, Man!! </h1>, document.getElementById('root'));
 
 ReactDOM.render(
-    <App />
+    <Todo />
     , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
