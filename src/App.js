@@ -5,7 +5,8 @@ import Footer from './components/Footer';
 import MainContent from './components/MainContent';
 
 //import logo from './logo.svg';
-//import './App.css';
+//Importing CSS 
+import './App.css';
 
 function App() {
   return (
