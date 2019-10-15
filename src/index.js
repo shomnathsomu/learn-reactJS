@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 // import MyApp from './components/MyApp';
 
  import './index.css';
- import Contact from './Contact';
+ import Joker from './Joker';
+// import Contact from './Contact';
 // import App from './App';
 // import * as serviceWorker from './serviceWorker';
 
@@ -12,7 +13,7 @@ import ReactDOM from 'react-dom';
 // ReactDOM.render(<h1>Hello World, Man!! </h1>, document.getElementById('root'));
 
 ReactDOM.render(
-    <Contact />
+    <Joker />
     , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
