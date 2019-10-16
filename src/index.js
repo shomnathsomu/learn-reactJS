@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // import MyApp from './components/MyApp';
 
- import './index.css';
- import Joker from './Joker';
+import './index.css';
+// import Joker from './Joker';
 // import Contact from './Contact';
-// import App from './App';
+import App from './App';
 // import * as serviceWorker from './serviceWorker';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
@@ -13,7 +13,7 @@ import ReactDOM from 'react-dom';
 // ReactDOM.render(<h1>Hello World, Man!! </h1>, document.getElementById('root'));
 
 ReactDOM.render(
-    <Joker />
+    <App />
     , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
