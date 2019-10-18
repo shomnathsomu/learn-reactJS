@@ -5,14 +5,12 @@ import React from 'react';
 //import MainContent from './components/MainContent';
 
 //import logo from './logo.svg';
-
-//****Importing CSS****///
 //import './App.css';
 
-import Product from './Product';
-import productsData from './vschoolProducts';
+//import Product from './Product';
+//import productsData from './vschoolProducts';
 
-function App() {
+//function App() {
 
   //const firstName = "Alice";
   //const secondName = "Doe";
@@ -41,9 +39,9 @@ function App() {
   //   styles.color = "maroon";
   // }
 
-  const productComponents = productsData.map(item => <Product key={item.id} product={item} />);
+  // const productComponents = productsData.map(item => <Product key={item.id} product={item} />);
 
-  return (
+  // return (
     // parent/ child components
     // <div>
     //   <Header />
@@ -55,10 +53,30 @@ function App() {
     // <h1  style={styles}>Good {timeOfDay}!</h1>
 
     // Mapping Components Practice
-    <div>
-      {productComponents}
-    </div>
-  );
+//     <div>
+//       {productComponents}
+//     </div>
+//   );
+// }
+
+// class based components
+class App extends React.Component {
+
+  yourMethodHere() {
+
+  }
+
+  render() {
+    const style = this.yourMethodHere();
+    const date = new Date();
+
+    return(
+      <div>
+        <h1>{this.props.something}</h1>
+      </div>
+    )
+
+  }
 }
 
 export default App;
