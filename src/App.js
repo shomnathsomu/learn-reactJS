@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 
 //import Header from './components/Header';
 //import Footer from './components/Footer';
@@ -60,7 +60,7 @@ import React from 'react';
 // }
 
 // class based components
-class App extends React.Component {
+class App extends Component {
 
   // yourMethodHere() {
 
@@ -70,7 +70,8 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      answer: "Yes"
+      name: "Sally",
+      age: 25
     }
   }
 
@@ -80,7 +81,9 @@ class App extends React.Component {
 
     return(
       <div>
-        <h1>Is state important to know? {this.state.answer}</h1>
+        {/* <h1>Is state important to know? {this.state.answer}</h1> */}
+        <h1>{this.state.name}</h1>
+        <h2>I am {this.state.age} years old.</h2>
       </div>
     )
 
