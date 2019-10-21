@@ -62,17 +62,25 @@ import React from 'react';
 // class based components
 class App extends React.Component {
 
-  yourMethodHere() {
+  // yourMethodHere() {
 
+  // }
+
+  // State
+  constructor() {
+    super();
+    this.state = {
+      answer: "Yes"
+    }
   }
 
   render() {
-    const style = this.yourMethodHere();
-    const date = new Date();
+    // const style = this.yourMethodHere();
+    // const date = new Date();
 
     return(
       <div>
-        <h1>{this.props.something}</h1>
+        <h1>Is state important to know? {this.state.answer}</h1>
       </div>
     )
 
