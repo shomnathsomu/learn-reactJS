@@ -1,14 +1,18 @@
-import React, {Component} from "react";
+import React from "react";
 import ReactDOM from "react-dom";
+
+// ======= imported Component ========
+// import React, {Component} from "react";
+
 // import MyApp from './components/MyApp';
 // import * as serviceWorker from './serviceWorker';
 
 // import Joker from './Joker';
 // import Contact from './Contact';
-import App from './App';
+//import App from './App';
 
-//import './index.css';
-//import Todo from './Todo';
+import './index.css';
+import Todo from './Todo';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 // ReactDOM.render(<h1>Hello World, Man!! </h1>, document.getElementById('root'));
@@ -57,7 +61,7 @@ import App from './App';
 //======= Class based components practice end======//\
 
 ReactDOM.render(
-    <App />
+    <Todo />
     , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
