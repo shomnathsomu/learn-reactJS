@@ -12,8 +12,9 @@ import ReactDOM from "react-dom";
 //import App from './App';
 
 import './index.css';
-//import Todo from './Todo';
-import Events from "./Events";
+import Todo from './Todo';
+// import Events from "./Events";
+// import Count from './Count';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 // ReactDOM.render(<h1>Hello World, Man!! </h1>, document.getElementById('root'));
@@ -62,7 +63,7 @@ import Events from "./Events";
 //======= Class based components practice end======//\
 
 ReactDOM.render(
-    <Events />
+    <Todo />
     , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
