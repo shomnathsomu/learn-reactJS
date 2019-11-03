@@ -9,6 +9,7 @@ import React, {Component} from 'react';
 
 //import Product from './Product';
 //import productsData from './vschoolProducts';
+import Conditional from './Conditional'
 
 //function App() {
 
@@ -70,8 +71,10 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      name: "Sally",
-      age: 25
+      // name: "Sally",
+      // age: 25
+
+      isLoading: true
     }
   }
 
@@ -90,6 +93,11 @@ class App extends Component {
   // Life Cycle Methods
   componentDidMount() {
     // GET the data I need to correctly display
+    setTimeout(() => {
+      this.setState = {
+        isLoading: false
+      }
+    }, 1500);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -120,8 +128,10 @@ class App extends Component {
     return(
       <div>
         {/* <h1>Is state important to know? {this.state.answer}</h1> */}
-        <h1>{this.state.name}</h1>
-        <h2>I am {this.state.age} years old.</h2>
+        {/* <h1>{this.state.name}</h1>
+        <h2>I am {this.state.age} years old.</h2> */}
+
+        <Conditional isLoading={this.state.isLoading}/>
       </div>
     )
 
