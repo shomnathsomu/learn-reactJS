@@ -78,13 +78,13 @@ class App extends Component {
     }
   }
 
-  static getDerivedStateFromProps(props, state) {
-    // return the new updated state based upon the props
-  }
+  // static getDerivedStateFromProps(props, state) {
+  //   // return the new updated state based upon the props
+  // }
 
-  getSnapshotBeforeUpdate() {
-    // create a backup of the current way things are
-  }
+  // getSnapshotBeforeUpdate() {
+  //   // create a backup of the current way things are
+  // }
 
   // componentWillMount() {
 
@@ -94,31 +94,31 @@ class App extends Component {
   componentDidMount() {
     // GET the data I need to correctly display
     setTimeout(() => {
-      this.setState = {
+      this.setState({
         isLoading: false
-      }
-    }, 1500);
+      })
+    }, 1500)
   }
 
-  componentWillReceiveProps(nextProps) {
-    if(nextProps.whatever !== this.props.whatever){
-      // DO something important here
-    }
-  }
-
-  shouldComponentUpdate(nextProps, nextSteps) {
-    // return true if you want it to update
-    // return false if not
-  }
-
-  // componentDidUpdate() {
-
+  // componentWillReceiveProps(nextProps) {
+  //   if(nextProps.whatever !== this.props.whatever){
+  //     // DO something important here
+  //   }
   // }
 
-  componentWillUnmount() {
-    // tear down or clean up your codes before your components disappear
-    // e.g remove event 
-  }
+  // shouldComponentUpdate(nextProps, nextSteps) {
+  //   // return true if you want it to update
+  //   // return false if not
+  // }
+
+  // // componentDidUpdate() {
+
+  // // }
+
+  // componentWillUnmount() {
+  //   // tear down or clean up your codes before your components disappear
+  //   // e.g remove event 
+  // }
 
 
   render() {
