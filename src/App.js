@@ -75,6 +75,22 @@ class App extends Component {
     }
   }
 
+  // Life Cycle Methods
+  componentDidMount() {
+
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if(nextProps.whatever !== this.props.whatever){
+      
+    }
+  }
+
+  shouldComponentUpdate() {
+    
+  }
+
+
   render() {
     // const style = this.yourMethodHere();
     // const date = new Date();
