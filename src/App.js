@@ -74,7 +74,11 @@ class App extends Component {
       // name: "Sally",
       // age: 25
 
-      isLoading: true
+      //isLoading: true
+      unreadMessages: [
+        "Call your mom!",
+        "New spam email available. All links are definately safe to click."
+      ]
     }
   }
 
@@ -131,7 +135,9 @@ class App extends Component {
         {/* <h1>{this.state.name}</h1>
         <h2>I am {this.state.age} years old.</h2> */}
 
-        <Conditional isLoading={this.state.isLoading}/>
+        {/* <Conditional isLoading={this.state.isLoading}/> */}
+
+        {this.state.unreadMessages.length > 0 && <h2>You have {this.state.unreadMessages.length} unread messages!</h2>}
       </div>
     )
 
