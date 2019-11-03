@@ -75,19 +75,41 @@ class App extends Component {
     }
   }
 
+  static getDerivedStateFromProps(props, state) {
+    // return the new updated state based upon the props
+  }
+
+  getSnapshotBeforeUpdate() {
+    // create a backup of the current way things are
+  }
+
+  // componentWillMount() {
+
+  // }
+
   // Life Cycle Methods
   componentDidMount() {
-
+    // GET the data I need to correctly display
   }
 
   componentWillReceiveProps(nextProps) {
     if(nextProps.whatever !== this.props.whatever){
-      
+      // DO something important here
     }
   }
 
-  shouldComponentUpdate() {
-    
+  shouldComponentUpdate(nextProps, nextSteps) {
+    // return true if you want it to update
+    // return false if not
+  }
+
+  // componentDidUpdate() {
+
+  // }
+
+  componentWillUnmount() {
+    // tear down or clean up your codes before your components disappear
+    // e.g remove event 
   }
 
 
