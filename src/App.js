@@ -9,7 +9,7 @@ import React, {Component} from 'react';
 
 //import Product from './Product';
 //import productsData from './vschoolProducts';
-import Conditional from './Conditional'
+//import Conditional from './Conditional'
 
 //function App() {
 
@@ -74,12 +74,24 @@ class App extends Component {
       // name: "Sally",
       // age: 25
 
-      //isLoading: true
-      unreadMessages: [
-        "Call your mom!",
-        "New spam email available. All links are definately safe to click."
-      ]
+      // isLoading: true
+      // unreadMessages: [
+      //   "Call your mom!",
+      //   "New spam email available. All links are definately safe to click."
+      // ]
+
+      isLoggedIn: false
     }
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    //console.log("I am working");
+    this.setState(prevState => {
+      return {
+        isLoggedIn: !prevState.isLoggedIn
+      }
+    })
   }
 
   // static getDerivedStateFromProps(props, state) {
@@ -95,14 +107,14 @@ class App extends Component {
   // }
 
   // Life Cycle Methods
-  componentDidMount() {
-    // GET the data I need to correctly display
-    setTimeout(() => {
-      this.setState({
-        isLoading: false
-      })
-    }, 1500)
-  }
+  // componentDidMount() {
+  //   // GET the data I need to correctly display
+  //   setTimeout(() => {
+  //     this.setState({
+  //       isLoading: false
+  //     })
+  //   }, 1500)
+  // }
 
   // componentWillReceiveProps(nextProps) {
   //   if(nextProps.whatever !== this.props.whatever){
@@ -129,6 +141,9 @@ class App extends Component {
     // const style = this.yourMethodHere();
     // const date = new Date();
 
+    let buttonText = this.state.isLoggedIn ? "LOG OUT" : "LOG IN";
+    let displayText = this.state.isLoggedIn ? "Logged in" : "Logged out";
+
     return(
       <div>
         {/* <h1>Is state important to know? {this.state.answer}</h1> */}
@@ -137,7 +152,10 @@ class App extends Component {
 
         {/* <Conditional isLoading={this.state.isLoading}/> */}
 
-        {this.state.unreadMessages.length > 0 && <h2>You have {this.state.unreadMessages.length} unread messages!</h2>}
+        {/* {this.state.unreadMessages.length > 0 && <h2>You have {this.state.unreadMessages.length} unread messages!</h2>} */}
+
+        <button onClick={this.handleClick}>{buttonText}</button>
+        <h1>{displayText}</h1>
       </div>
     )
 
