@@ -80,7 +80,9 @@ class App extends Component {
       //   "New spam email available. All links are definately safe to click."
       // ]
 
-      isLoggedIn: false
+      // isLoggedIn: false
+
+      character: {}
     }
     this.handleClick = this.handleClick.bind(this);
   }
@@ -107,14 +109,22 @@ class App extends Component {
   // }
 
   // Life Cycle Methods
-  // componentDidMount() {
+  componentDidMount() {
   //   // GET the data I need to correctly display
   //   setTimeout(() => {
   //     this.setState({
   //       isLoading: false
   //     })
   //   }, 1500)
-  // }
+
+      fetch("https://swapi.co/api/people/1")
+        .then(response => response.json())
+        .then(data => {
+          this.setState({
+            character: data
+          })
+        })
+  }
 
   // componentWillReceiveProps(nextProps) {
   //   if(nextProps.whatever !== this.props.whatever){
@@ -141,8 +151,8 @@ class App extends Component {
     // const style = this.yourMethodHere();
     // const date = new Date();
 
-    let buttonText = this.state.isLoggedIn ? "LOG OUT" : "LOG IN";
-    let displayText = this.state.isLoggedIn ? "Logged in" : "Logged out";
+    //let buttonText = this.state.isLoggedIn ? "LOG OUT" : "LOG IN";
+    //let displayText = this.state.isLoggedIn ? "Logged in" : "Logged out";
 
     return(
       <div>
@@ -154,8 +164,10 @@ class App extends Component {
 
         {/* {this.state.unreadMessages.length > 0 && <h2>You have {this.state.unreadMessages.length} unread messages!</h2>} */}
 
-        <button onClick={this.handleClick}>{buttonText}</button>
-        <h1>{displayText}</h1>
+        {/* <button onClick={this.handleClick}>{buttonText}</button>
+        <h1>{displayText}</h1> */}
+
+        {this.state.character.name}
       </div>
     )
 
