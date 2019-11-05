@@ -110,6 +110,7 @@ class App extends Component {
 
   // Life Cycle Methods
   componentDidMount() {
+    this.setState({loading: true})
   //   // GET the data I need to correctly display
   //   setTimeout(() => {
   //     this.setState({
@@ -117,13 +118,14 @@ class App extends Component {
   //     })
   //   }, 1500)
 
-      fetch("https://swapi.co/api/people/1")
-        .then(response => response.json())
-        .then(data => {
-          this.setState({
-            character: data
-          })
+    fetch("https://swapi.co/api/people/1")
+      .then(response => response.json())
+      .then(data => {
+        this.setState({
+          character: data,
+          loading: false
         })
+      })
   }
 
   // componentWillReceiveProps(nextProps) {
@@ -154,20 +156,24 @@ class App extends Component {
     //let buttonText = this.state.isLoggedIn ? "LOG OUT" : "LOG IN";
     //let displayText = this.state.isLoggedIn ? "Logged in" : "Logged out";
 
+    const text = this.state.loading ? "loading.." : this.state.character.name;
+
     return(
       <div>
-        {/* <h1>Is state important to know? {this.state.answer}</h1> */}
+        {/ <h1>Is state important to know? {this.state.answer}</h1> /}
         {/* <h1>{this.state.name}</h1>
         <h2>I am {this.state.age} years old.</h2> */}
 
-        {/* <Conditional isLoading={this.state.isLoading}/> */}
+        {/ <Conditional isLoading={this.state.isLoading}/> /}
 
-        {/* {this.state.unreadMessages.length > 0 && <h2>You have {this.state.unreadMessages.length} unread messages!</h2>} */}
+        {/ {this.state.unreadMessages.length > 0 && <h2>You have {this.state.unreadMessages.length} unread messages!</h2>} /}
 
         {/* <button onClick={this.handleClick}>{buttonText}</button>
         <h1>{displayText}</h1> */}
 
-        {this.state.character.name}
+        {/ {this.state.character.name} /}
+
+        <p>{text}</p>
       </div>
     )
 
