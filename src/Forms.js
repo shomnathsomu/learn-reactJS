@@ -53,7 +53,7 @@ class Forms extends Component {
 
                 <br />
 
-                {/ formik /}
+                {/* formik */}
                 <label>Favorite Color:</label>
                 <select 
                     value={this.state.favColor}
