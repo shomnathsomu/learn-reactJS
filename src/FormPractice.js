@@ -51,7 +51,7 @@ class FormPractice extends Component {
 
                     <br />
 
-                    {/ formik /}
+                    {/* formik */}
                     <label>Select Your Destination: </label>
                     <select 
                         value={this.state.destination}
