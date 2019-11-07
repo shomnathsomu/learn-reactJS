@@ -17,7 +17,7 @@ import './index.css';
 // import Events from "./Events";
 // import Count from './Count';
 // import Forms from './Forms'
-import FormPractice from "./FormPractice";
+ import FormPractice from "./FormPractice";
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 // ReactDOM.render(<h1>Hello World, Man!! </h1>, document.getElementById('root'));
