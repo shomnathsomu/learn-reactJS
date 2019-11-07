@@ -160,13 +160,13 @@ class App extends Component {
 
     return(
       <div>
-        {/ <h1>Is state important to know? {this.state.answer}</h1> /}
+        {/* <h1>Is state important to know? {this.state.answer}</h1> */}
         {/* <h1>{this.state.name}</h1>
         <h2>I am {this.state.age} years old.</h2> */}
 
-        {/ <Conditional isLoading={this.state.isLoading}/> /}
+        {/* <Conditional isLoading={this.state.isLoading}/> */}
 
-        {/ {this.state.unreadMessages.length > 0 && <h2>You have {this.state.unreadMessages.length} unread messages!</h2>} /}
+        {/* {this.state.unreadMessages.length > 0 && <h2>You have {this.state.unreadMessages.length} unread messages!</h2>} */}
 
         {/* <button onClick={this.handleClick}>{buttonText}</button>
         <h1>{displayText}</h1> */}
