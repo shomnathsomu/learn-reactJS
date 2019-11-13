@@ -9,7 +9,7 @@ import ReactDOM from "react-dom";
 
 // import Joker from './Joker';
 // import Contact from './Contact';
-//import App from './App';
+// import App from './App';
 
 import './index.css';
 // import Todo from './Todo';
@@ -17,7 +17,8 @@ import './index.css';
 // import Events from "./Events";
 // import Count from './Count';
 // import Forms from './Forms'
- import Form from "./FormContainer";
+// import Form from "./FormContainer";
+import Meme from './MemeGenerator/Meme';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 // ReactDOM.render(<h1>Hello World, Man!! </h1>, document.getElementById('root'));
@@ -66,7 +67,7 @@ import './index.css';
 //======= Class based components practice end======//\
 
 ReactDOM.render(
-    <Form />
+    <Meme />
     , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
