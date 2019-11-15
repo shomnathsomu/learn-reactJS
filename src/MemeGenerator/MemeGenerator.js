@@ -17,7 +17,7 @@ class MemeGenerator extends Component {
             allMemeImgs: []
         }
         this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
+        // this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     /**
@@ -54,7 +54,7 @@ class MemeGenerator extends Component {
      * Chooses one of the memes from our `allMemeImgs` array at random and makes it so that is the meme image that shows up in the bottom of portion of our meme generator site (`.url`)
      */
 
-    handleSubmit(event) {
+    handleSubmit = (event) => {
         event.preventDefault();
         const randNum = Math.floor(Math.random() * this.state.allMemeImgs.length)
         const randMemeImg = this.state.allMemeImgs[randNum].url;
